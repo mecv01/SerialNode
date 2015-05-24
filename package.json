@@ -1,0 +1,15 @@
+{
+  "name": "serialNode",
+  "version": "1.0.0",
+  "description": "Serial Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "imagesnapjs": "0.0.7",
+    "xoauth2": "^1.0.0"
+  }
+}
