@@ -74,7 +74,7 @@ var takeAndSendPicture = function(context, sensorValue, sentEMail){
     context._sentEmail = true;
     context._imagesnapjs.capture(fileName , 
     	{cliflags: '-w 2'}, 
-    	function(err) {
+    	function takePicture(err) {
         
 		    //console.log(err ? err : '===Image saved!');
 		    // let's block the email distribution
@@ -96,7 +96,7 @@ var takeAndSendPicture = function(context, sensorValue, sentEMail){
 		    var __this = _this;
 
 		    // send mail with defined transport object
-		    _this._transporter.sendMail(mailOptions, function(error, info){
+		    _this._transporter.sendMail(mailOptions, function sendEmail(error, info){
 		        if(error){
 		            console.log(error);
 		        }else{
@@ -111,7 +111,7 @@ var takeAndSendPicture = function(context, sensorValue, sentEMail){
     	});
   }
   else{
-    context._imagesnapjs.capture(fileName , { cliflags: '-w 2'}, function(err) {
+    context._imagesnapjs.capture(fileName , { cliflags: '-w 2'}, function takePicture(err) {
       console.log('===Image saved but the mail system is bussy...!');
     });
   }
