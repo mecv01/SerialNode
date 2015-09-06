@@ -1,7 +1,7 @@
-config.js
+nodeApp/config/config.js
 .DS_Store
-picturesLog/
-node_modules/
-coverage/
+nodeApp/picturesLog/
+nodeApp/node_modules/
+nodeApp/coverage/
 *.log
 *.idea
