@@ -2,3 +2,5 @@ config.js
 .DS_Store
 picturesLog/
 node_modules/
+*.log
+*.idea

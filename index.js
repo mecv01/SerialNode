@@ -1,7 +1,7 @@
 'use strict';
 
 var di 				= require('di');
-var injectorConfig 	= require('./injectorConfig');
+var injectorConfig 	= require('./config/injectorConfig');
 
 var injector 		= new di.Injector([injectorConfig]);
 
